@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApplicationProjetoIntegrador1</string>
+    <string name="tituloformcadastro">Seja Bem Vindo!</string>
+    <string name="textbt">Entrar sem um Login</string>
+    <string name="textbt2">Ir para Tela de Agendamento</string>
+    <string name="textbt3">Cancelar Agendamento</string>
+</resources>

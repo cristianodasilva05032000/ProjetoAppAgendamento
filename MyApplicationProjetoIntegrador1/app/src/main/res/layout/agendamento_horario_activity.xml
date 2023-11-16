@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/fundo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FF80AB"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha a Data que Deseja Agendar"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Layout horizontal para os NumberPickers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- NumberPicker para seleção do dia -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <NumberPicker
+                    android:id="@+id/numberPickerDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:descendantFocusability="blocksDescendants" />
+            </LinearLayout>
+
+            <!-- NumberPicker para seleção do mês -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mês"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <NumberPicker
+                    android:id="@+id/numberPickerMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:descendantFocusability="blocksDescendants" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Agendar" />
+
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="149dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo"
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
